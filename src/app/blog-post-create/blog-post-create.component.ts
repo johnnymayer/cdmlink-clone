@@ -17,8 +17,6 @@ export class BlogPostCreateComponent {
     let newBlogPost: BlogPost = new BlogPost(title, image, post);
     console.log(newBlogPost);
     this.clickedAdd.emit(newBlogPost);
-    
-
   }
 
 }
