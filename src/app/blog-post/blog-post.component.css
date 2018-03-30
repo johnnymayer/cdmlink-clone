@@ -8,7 +8,7 @@
 }
 
 .read_more_button {
-  font-size: 1rem;
+  font-size: 1.25rem;
   border-style: hidden;
 }
 
@@ -18,7 +18,7 @@
 
 .tag_button {
   border-style: hidden;
-  font-size: .5rem;
+  font-size: 1rem;
   width: 60px;
 }
 
