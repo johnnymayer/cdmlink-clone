@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { BlogPostComponent } from './blog-post/blog-post.component';
 import { BlogPostListComponent } from './blog-post-list/blog-post-list.component';
-import { TruncatePipe } from './app.pipe';
+import { Pipe, PipeTransform } from '@angular/core';
 import { LimitToPipe } from './limit-to.pipe';
 import { HeaderComponent } from './header/header.component';
 import { AppRoutingModule } from './app-routing.module';
