@@ -1,15 +1,12 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { TruncatePipe } from './app.pipe';
-
-
 import { AppComponent } from './app.component';
 import { BlogPostComponent } from './blog-post/blog-post.component';
 import { BlogPostListComponent } from './blog-post-list/blog-post-list.component';
 import { LimitToPipe } from './limit-to.pipe';
 import { HeaderComponent } from './header/header.component';
-import { RouterModule, Routes } from '@angular/router';
-import { NewBlogPostComponent } from './new-blog-post/new-blog-post.component';
+import { AppRoutingModule } from './/app-routing.module';
 
 
 @NgModule({
@@ -18,14 +15,11 @@ import { NewBlogPostComponent } from './new-blog-post/new-blog-post.component';
     BlogPostComponent,
     BlogPostListComponent,
     LimitToPipe,
-    HeaderComponent,
-    NewBlogPostComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(
-      appRoutes,
-    )
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
