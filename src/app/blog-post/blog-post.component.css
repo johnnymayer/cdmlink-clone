@@ -8,16 +8,17 @@
 }
 
 .read_more_button {
-  font-size: .45rem;
+  font-size: 1rem;
   border-style: hidden;
-  height: 100px;
-  width: 80px;
+}
+
+.read_more_button:hover, .tag_button:hover {
+  background-color: #bfb59e;
 }
 
 .tag_button {
   border-style: hidden;
-  font-size: .25rem;
-  height: 80px;
+  font-size: .5rem;
   width: 60px;
 }
 
