@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-
 import { BlogPost } from './models/BlogPost.model';
+import { Pipe, PipeTransform } from '@angular/core';
 
 @Component({
   selector: 'app-root',

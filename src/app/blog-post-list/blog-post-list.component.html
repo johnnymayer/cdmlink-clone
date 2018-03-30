@@ -7,7 +7,7 @@
     <div>
     <br>
     <div class="blog_post_intro">
-    <p>{{blogPost.post}}</p>
+    <p>{{blogPost.post | limitTo : 120 }}</p>
     <button class="read_more_button">READ MORE ➡</button>
   </div>
 </div>
