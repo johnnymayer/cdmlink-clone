@@ -1,12 +1,21 @@
 /* You can add global styles to this file, and also import other style files */
 .blog_post {
   margin-left: 12vw;
-  margin-top: 6vw;
+  margin-top: 2vw;
   text-align: left;
 }
 
+h1 {
+  margin: .5vw auto;
+}
+
+.blog_post_intro {
+  margin-top: 0 auto;
+  width: 640px;
+}
+
 .tag_links_box {
-  display: inline-block;
+  margin: 0 auto;
 }
 
 .read_more_button {
@@ -14,14 +23,13 @@
   border-style: hidden;
 }
 
-.read_more_button:hover, .tag_button:hover {
-  background-color: #bfb59e;
-}
-
 .tag_button {
   border-style: hidden;
   font-size: 1rem;
-  width: 60px;
+}
+
+.read_more_button:hover, .tag_button:hover {
+  background-color: #bfb59e;
 }
 
 img {
