@@ -1,8 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
 .blog_post {
   margin-left: 12vw;
-  margin-top: 2vw;
+  margin-top: 4vw;
   text-align: left;
+  padding-top: 2vw;
 }
 
 h1 {
@@ -26,6 +27,7 @@ h1 {
 .tag_button {
   border-style: hidden;
   font-size: 1rem;
+  background-color: transparent;
 }
 
 .read_more_button:hover, .tag_button:hover {

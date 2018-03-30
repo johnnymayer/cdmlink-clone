@@ -1,0 +1,13 @@
+.navbar {
+  overflow: hidden;
+  position: fixed;
+  margin: 0 auto;
+  top: 0;
+  width: 100%;
+  background-color: #c4b1ae;
+  font-size: 2rem;
+}
+
+div.inline {
+  float:left;
+}

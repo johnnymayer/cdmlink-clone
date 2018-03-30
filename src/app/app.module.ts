@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { BlogPostComponent } from './blog-post/blog-post.component';
 import { BlogPostListComponent } from './blog-post-list/blog-post-list.component';
 import { LimitToPipe } from './limit-to.pipe';
+import { HeaderComponent } from './header/header.component';
 
 
 @NgModule({
@@ -14,7 +15,8 @@ import { LimitToPipe } from './limit-to.pipe';
     AppComponent,
     BlogPostComponent,
     BlogPostListComponent,
-    LimitToPipe
+    LimitToPipe,
+    HeaderComponent
   ],
   imports: [
     BrowserModule
