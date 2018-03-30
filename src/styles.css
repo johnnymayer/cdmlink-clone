@@ -1,4 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body {
+  margin: 0;
+}
+
 .blog_post {
   margin-left: 12vw;
   margin-top: 4vw;
@@ -38,4 +43,8 @@ img {
   height: 480px;
   width: 640px;
   /* Need to adjust images dynamically, intend to class each image and not style every img element */
+}
+
+.inline {
+  display: inline-block;
 }
