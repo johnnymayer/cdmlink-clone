@@ -1,3 +1,8 @@
-<p>
-  blog-post-list works!
-</p>
+<div class="blog-post">
+  <div class="card" *ngFor="let blogPost of childBlogPostList" (click)="showBlogPost(blogPost)">
+    <h1>{{blogPost.title}}</h1>
+    <img src="{{blogPost.image}}" alt="">
+    <p>{{blogPost.post}}</p>
+  </div>
+
+</div>

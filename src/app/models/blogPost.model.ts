@@ -1,8 +1,8 @@
 export class BlogPost {
-  constructor (
+  constructor(
     public title: string,
     public image: string,
-    public post: string
+    public post: string,
   ) {}
 }
 

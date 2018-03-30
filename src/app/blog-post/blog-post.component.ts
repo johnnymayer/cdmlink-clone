@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { BlogPost } from '../models/BlogPost.model';
 
 @Component({
@@ -6,11 +6,7 @@ import { BlogPost } from '../models/BlogPost.model';
   templateUrl: './blog-post.component.html',
   styleUrls: ['./blog-post.component.css']
 })
-export class BlogPostComponent implements OnInit {
+export class BlogPostComponent {
 
-  constructor() { }
-
-  ngOnInit() {
-  }
 
 }

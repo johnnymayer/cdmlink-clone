@@ -7,10 +7,13 @@ import { BlogPost } from '../models/BlogPost.model';
   styleUrls: ['./blog-post-list.component.css']
 })
 export class BlogPostListComponent {
+  @Input() childBlogPostList: BlogPost[];
+  @Output() clickViewPost = new EventEmitter();
 
-  constructor() { }
+  selectedBlogPost = null;
 
-  ngOnInit() {
-  }
+  showBlogPost(clickedBlogPost) {
+    this.selectedBlogPost = clickedBlogPost;
+  };
 
 }

@@ -1,1 +1,30 @@
 /* You can add global styles to this file, and also import other style files */
+.blog_post {
+  margin-left: 12vw;
+  text-align: left;
+}
+
+.tag_links_box {
+  display: inline-block;
+}
+
+.read_more_button {
+  font-size: 1.25rem;
+  border-style: hidden;
+}
+
+.read_more_button:hover, .tag_button:hover {
+  background-color: #bfb59e;
+}
+
+.tag_button {
+  border-style: hidden;
+  font-size: 1rem;
+  width: 60px;
+}
+
+img {
+  height: 480px;
+  width: 640px;
+  /* Need to adjust images dynamically, intend to class each image and not style every img element */
+}
