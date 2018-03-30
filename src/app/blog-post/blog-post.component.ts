@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { BlogPost } from '../models/BlogPost.model';
 
 @Component({
   selector: 'app-blog-post',
