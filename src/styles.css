@@ -33,6 +33,8 @@ h1 {
   border-style: hidden;
   font-size: 1rem;
   background-color: transparent;
+  padding-left: 2vw;
+  padding-right: 2vw;
 }
 
 .read_more_button:hover, .tag_button:hover {
@@ -44,7 +46,10 @@ img {
   width: 640px;
   /* Need to adjust images dynamically, intend to class each image and not style every img element */
 }
+.logo {
+  float: left;
+}
 
 .inline {
-  display: inline-block;
+  display: inline;
 }

@@ -4,10 +4,10 @@
   margin: 0 auto;
   top: 0;
   width: 100%;
-  background-color: #c4b1ae;
+  background-color: white;
   font-size: 2rem;
 }
 
-div.inline {
-  float:left;
+.tag_links_box_header {
+  margin-left: 12vw;
 }
