@@ -8,6 +8,8 @@ import { BlogPostComponent } from './blog-post/blog-post.component';
 import { BlogPostListComponent } from './blog-post-list/blog-post-list.component';
 import { LimitToPipe } from './limit-to.pipe';
 import { HeaderComponent } from './header/header.component';
+import { RouterModule, Routes } from '@angular/router';
+import { NewBlogPostComponent } from './new-blog-post/new-blog-post.component';
 
 
 @NgModule({
@@ -16,10 +18,14 @@ import { HeaderComponent } from './header/header.component';
     BlogPostComponent,
     BlogPostListComponent,
     LimitToPipe,
-    HeaderComponent
+    HeaderComponent,
+    NewBlogPostComponent,
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    RouterModule.forRoot(
+      appRoutes,
+    )
   ],
   providers: [],
   bootstrap: [AppComponent]
