@@ -12,13 +12,13 @@ import { BlogPostService } from '../blog-post.service';
 export class WelcomeComponent implements OnInit {
 
   blogPostsDisplay;
-  posts;
+  blogPosts;
   constructor(private blogPostListComponent: BlogPostListComponent, private blogPostService: BlogPostService) { }
 
   ngOnInit() {
     this.blogPostService.getBlogPosts().subscribe(dataLastEmittedFromObserver => {
       this.blogPostsDisplay = dataLastEmittedFromObserver;
-      this.posts = this.blogPostsDisplay;
+      this.blogPosts = this.blogPostsDisplay;
     })
   }
 

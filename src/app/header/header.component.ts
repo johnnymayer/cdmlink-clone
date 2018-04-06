@@ -1,14 +1,13 @@
-import { Component, Input, Output, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { BlogPostService } from '../blog-post.service';
 import { BlogPostListComponent } from '../blog-post-list/blog-post-list.component';
 import { BlogPostComponent } from '../blog-post/blog-post.component';
-import { WelcomeComponent } from '../welcome/welcome.component';
 
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.css'],
-  providers: [BlogPostService, BlogPostListComponent, WelcomeComponent]
+  providers: [BlogPostService, BlogPostListComponent]
 })
 export class HeaderComponent implements OnInit {
   constructor(private blogPostListComponent: BlogPostListComponent, private blogPostService: BlogPostService) {}

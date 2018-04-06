@@ -4,9 +4,9 @@
             <img src="{{currentBlogPost.image}}">
             <h2>{{currentBlogPost.title}}</h2>
             <p>{{currentBlogPost.post | limitTo : 120 }}</p>
-            <a [routerLink]="['/details', currentBlogPost.title]">READ MORE</a>
+            <a [routerLink]="['/posts', currentBlogPost.$key]">READ MORE</a>
         </li>
         <hr>
-        <br>
+
     </ul>
 </div>

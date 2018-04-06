@@ -17,6 +17,7 @@ import { LimitToPipe } from './limit-to.pipe';
 import { TechnologyComponent } from './technology/technology.component';
 import { PerformanceComponent } from './performance/performance.component';
 import { WelcomeComponent } from './welcome/welcome.component';
+import { BlogPostService } from './blog-post.service';
 
 
 
@@ -48,7 +49,7 @@ export const firebaseConfig = {
     AngularFireDatabaseModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [BlogPostService],
   bootstrap: [AppComponent]
 })
 

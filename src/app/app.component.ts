@@ -13,6 +13,6 @@ import { FirebaseListObservable } from 'angularfire2/database';
 export class AppComponent {
   title = 'cdmClone';
   
-  projects: FirebaseListObservable<any[]>;
+  blogPosts: FirebaseListObservable<any[]>;
 
 }

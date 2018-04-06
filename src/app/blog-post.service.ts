@@ -3,6 +3,7 @@ import { BlogPost } from './models/BlogPost.model';
 import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/database';
 
 @Injectable()
+
 export class BlogPostService {
 
   constructor(private database: AngularFireDatabase) {
@@ -16,6 +17,6 @@ export class BlogPostService {
    }
 
    getBlogPostById(blogPostId: string) {
-     return this.database.object('blogPosts/' + blogPostId);
+     return this.database.object('posts/' + blogPostId);
    }
 }

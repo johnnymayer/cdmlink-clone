@@ -14,7 +14,7 @@ export const appRoutes: Routes = [
     { path: 'technology', component: TechnologyComponent },
     { path: 'performance', component: PerformanceComponent },
     { path: 'archive', component: BlogPostListComponent },
-    { path: 'details/:title', component: BlogPostComponent }
+    { path: 'posts/:id', component: BlogPostComponent }
 
 ];
 
