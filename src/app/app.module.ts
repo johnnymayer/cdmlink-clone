@@ -15,8 +15,8 @@ import { ArchiveComponent } from './archive/archive.component';
 import { HeaderComponent } from './header/header.component';
 import { LimitToPipe } from './limit-to.pipe';
 import { TechnologyComponent } from './technology/technology.component';
-import { HardwareComponent } from './hardware/hardware.component';
 import { PerformanceComponent } from './performance/performance.component';
+import { WelcomeComponent } from './welcome/welcome.component';
 
 
 
@@ -36,8 +36,8 @@ export const firebaseConfig = {
     HeaderComponent,
     ArchiveComponent,
     TechnologyComponent,
-    HardwareComponent,
-    PerformanceComponent
+    PerformanceComponent,
+    WelcomeComponent
   ],
   imports: [
     BrowserModule,

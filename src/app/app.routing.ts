@@ -5,17 +5,16 @@ import { HeaderComponent } from './header/header.component';
 import { BlogPostListComponent } from './blog-post-list/blog-post-list.component';
 import { BlogPostComponent } from './blog-post/blog-post.component';
 import { TechnologyComponent } from './technology/technology.component';
-import { HardwareComponent } from './hardware/hardware.component';
 import { PerformanceComponent } from './performance/performance.component';
 import { ArchiveComponent } from './archive/archive.component';
+import { WelcomeComponent } from './welcome/welcome.component';
 
 export const appRoutes: Routes = [
-    { path: '', component: BlogPostListComponent },
+    { path: '', component: WelcomeComponent },
     { path: 'technology', component: TechnologyComponent },
-    { path: 'hardware', component: HardwareComponent },
     { path: 'performance', component: PerformanceComponent },
-    { path: 'archive', component: ArchiveComponent },
-    { path: 'details/:id', component: BlogPostComponent }
+    { path: 'archive', component: BlogPostListComponent },
+    { path: 'details/:title', component: BlogPostComponent }
 
 ];
 
