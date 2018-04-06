@@ -57,7 +57,9 @@ Run ```$ng serve``` for a dev server. Navigate to `http://localhost:4200/`. The 
 
 ## Acknowledgements
 [Epicodus](http://www.learnhowtoprogram.com)
+
 [Monster Energy](https://www.monsterenergy.com/)
+
 [Dieselboy - System Upgrade(Full length DJ mix)](https://www.youtube.com/watch?v=4SIdbXP3JNA)
 
 ## License
