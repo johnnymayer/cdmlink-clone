@@ -15,6 +15,7 @@ export const appRoutes: Routes = [
     { path: 'hardware', component: HardwareComponent },
     { path: 'performance', component: PerformanceComponent },
     { path: 'archive', component: ArchiveComponent },
+    { path: 'details/:id', component: BlogPostComponent }
 
 ];
 

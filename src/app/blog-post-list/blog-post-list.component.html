@@ -1,11 +1,13 @@
 <br>
 <br>
-<div *ngFor="let currentBlogPost of blogPosts | async">
+<div class="container" *ngFor="let currentBlogPost of blogPosts | async">
     <ul>
         <li>
             <h2>{{currentBlogPost.title}}</h2>
             <img src="{{currentBlogPost.image}}">
-            <p>{{currentBlogPost.post | LimitTo : 24 }} </p>
+            <p>{{currentBlogPost.post | limitTo : 64 }}</p>
+            <a [routerLink]="['/details', currentBlogPost.$key]">READ MORE</a>
         </li>
+        <br>
     </ul>
 </div>

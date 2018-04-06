@@ -1,0 +1,17 @@
+a {
+  text-decoration: none;
+  color: black;
+  padding: 2px 2px;
+  float: right;
+}
+
+a:hover {
+  cursor: pointer;
+  color:white;
+  background-color:black;
+}
+
+ul, li {
+    list-style: none;
+    display: inline-block;
+}

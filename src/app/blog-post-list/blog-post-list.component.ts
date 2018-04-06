@@ -4,6 +4,7 @@ import { FirebaseListObservable } from 'angularfire2/database';
 import { BlogPost } from '../models/BlogPost.model';
 import { Router } from '@angular/router';
 import { BlogPostService } from '../blog-post.service';
+import { LimitToPipe } from '../limit-to.pipe';
 
 @Component({
   selector: 'app-blog-post-list',
@@ -14,7 +15,6 @@ import { BlogPostService } from '../blog-post.service';
 
 
 export class BlogPostListComponent {
-  
   
   constructor(private router: Router, private blogPostService: BlogPostService) {}
   
