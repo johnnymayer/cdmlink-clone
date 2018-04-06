@@ -6,8 +6,19 @@ import { BlogPostListComponent } from './blog-post-list/blog-post-list.component
 import { Pipe, PipeTransform } from '@angular/core';
 import { LimitToPipe } from './limit-to.pipe';
 import { HeaderComponent } from './header/header.component';
-import { AppRoutingModule } from './app-routing.module';
+import { Router } from './app-routing.module';
+import { ArchiveComponent } from './archive/archive.component';
+import { masterFirebaseConfig } from './api-keys';
+import { AngularFireModule } from 'angularfire2';
+import { AngularFireDatabaseModule } from 'angularfire2/database';
+import { HttpModule } from '@angular/http';
 
+export const firebaseConfig = {
+  apiKey: masterFirebaseConfig.apiKey,
+  authDomain: masterFirebaseConfig.authDomain,
+  databaseURL: masterFirebaseConfig.databaseURL,
+  storageBucket: masterFirebaseConfig.storageBucket
+};
 
 @NgModule({
   declarations: [
@@ -15,11 +26,16 @@ import { AppRoutingModule } from './app-routing.module';
     BlogPostComponent,
     BlogPostListComponent,
     LimitToPipe,
-    HeaderComponent
+    HeaderComponent,
+    ArchiveComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    Router,
+    BrowserModule,
+    HttpModule,
+    AngularFireModule.initializeApp(firebaseConfig),
+    AngularFireDatabaseModule
   ],
   providers: [],
   bootstrap: [AppComponent]
