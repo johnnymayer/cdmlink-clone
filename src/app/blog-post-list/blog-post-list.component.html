@@ -1,3 +1,11 @@
-<div>
-    <p>HELLO</p>
+<br>
+<br>
+<div *ngFor="let currentBlogPost of blogPosts | async">
+    <ul>
+        <li>
+            <h2>{{currentBlogPost.title}}</h2>
+            <img src="{{currentBlogPost.image}}">
+            <p>{{currentBlogPost.post | LimitTo : 24 }} </p>
+        </li>
+    </ul>
 </div>
