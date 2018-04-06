@@ -14,6 +14,9 @@ import { BlogPostListComponent } from './blog-post-list/blog-post-list.component
 import { ArchiveComponent } from './archive/archive.component';
 import { HeaderComponent } from './header/header.component';
 import { LimitToPipe } from './limit-to.pipe';
+import { TechnologyComponent } from './technology/technology.component';
+import { HardwareComponent } from './hardware/hardware.component';
+import { PerformanceComponent } from './performance/performance.component';
 
 
 
@@ -31,7 +34,10 @@ export const firebaseConfig = {
     BlogPostListComponent,
     LimitToPipe,
     HeaderComponent,
-    ArchiveComponent
+    ArchiveComponent,
+    TechnologyComponent,
+    HardwareComponent,
+    PerformanceComponent
   ],
   imports: [
     BrowserModule,
