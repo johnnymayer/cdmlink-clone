@@ -6,7 +6,7 @@ import { BlogPostListComponent } from './blog-post-list/blog-post-list.component
 import { Pipe, PipeTransform } from '@angular/core';
 import { LimitToPipe } from './limit-to.pipe';
 import { HeaderComponent } from './header/header.component';
-import { Router } from './app-routing.module';
+import {  } from './app.routing';
 import { ArchiveComponent } from './archive/archive.component';
 import { masterFirebaseConfig } from './api-keys';
 import { AngularFireModule } from 'angularfire2';
@@ -31,8 +31,6 @@ export const firebaseConfig = {
   ],
   imports: [
     BrowserModule,
-    Router,
-    BrowserModule,
     HttpModule,
     AngularFireModule.initializeApp(firebaseConfig),
     AngularFireDatabaseModule
@@ -40,4 +38,5 @@ export const firebaseConfig = {
   providers: [],
   bootstrap: [AppComponent]
 })
+
 export class AppModule { }

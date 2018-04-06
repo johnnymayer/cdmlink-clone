@@ -1,8 +1,9 @@
-import { Component, Input, Output, EventEmitter } from '@angular/core';
+import { Component, Input, Output, EventEmitter, OnInit } from '@angular/core';
 import { BlogPost } from '../models/BlogPost.model';
 import { BlogPostService } from '../blog-post.service';
 import { RouterModule, Routes, Route } from '@angular/router';
 import { Router } from '../app-routing.module';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-blog-post-list',
@@ -10,9 +11,17 @@ import { Router } from '../app-routing.module';
   styleUrls: ['./blog-post-list.component.css'],
   providers: [BlogPostService]
 })
-export class BlogPostListComponent {
+export class BlogPostListComponent implements OnInit {
 
-  constructor(private router: Router, private blogPostService: BlogPostService) {}
+  constructor(private route: ActivatedRoute, private router: Router, private blogPostService: BlogPostService) {}
+
+  ngOnInit() {
+    this.blogPost = this.blogPostService.getBlogPosts;
+  }
+
+  goToDetails(clickedBlogPost: BlogPost) {
+    this.router.navigate(['blogPosts', clickedBlogPost]);
+  };
 
   @Input() childBlogPostList: BlogPost[];
   @Output() clickViewPost = new EventEmitter();
