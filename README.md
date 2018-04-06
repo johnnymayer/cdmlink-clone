@@ -2,6 +2,8 @@
 
 This is an Angular site clone of [Create Digital Music](http://cdm.link).  A site I frequently browse that contains posts regarding music, music technology, music hardwares, etc.  This project is an exploration in Angular, and site building.
 
+[View the site here!](https://cdmlinkclone.firebaseapp.com)
+
 ## Technologies & Development Tools
 
 * [Angular CLI](https://github.com/angular/angular-cli)
