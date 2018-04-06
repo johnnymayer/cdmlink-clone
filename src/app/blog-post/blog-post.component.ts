@@ -19,7 +19,12 @@ export class BlogPostComponent implements OnInit {
   blogPostId: string;
   blogPostDisplay;
   
-  constructor(private router: Router, private route: ActivatedRoute, private location: Location, private blogPostService: BlogPostService) {}
+  constructor(
+    private router: Router, 
+    private route: ActivatedRoute, 
+    private location: Location, 
+    private blogPostService: BlogPostService
+  ) {}
 
   ngOnInit() {
     this.route.params.forEach((urlParameters) => {

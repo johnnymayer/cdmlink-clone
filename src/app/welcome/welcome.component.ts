@@ -13,6 +13,7 @@ export class WelcomeComponent implements OnInit {
 
   blogPostsDisplay;
   blogPosts;
+  
   constructor(private blogPostListComponent: BlogPostListComponent, private blogPostService: BlogPostService) { }
 
   ngOnInit() {
