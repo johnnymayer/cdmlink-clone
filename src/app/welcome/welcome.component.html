@@ -1,0 +1,17 @@
+<div *ngFor="let blogPost of blogPosts; let i=index">
+    <div *ngIf="i<3">
+        <h1>{{blogPost.title}}</h1>
+    </div>
+</div>
+
+<div class="container" *ngFor="let blogPost of blogPosts; let i=index">
+    <ul>
+        <li>
+            <div *ngIf="i<3">
+                <img src="{{blogPost.image}}">
+                <h2>{{blogPost.title}}</h2>
+                <a [routerLink]="['/posts', blogPost.$key]">READ MORE</a>
+            </div>
+        </li>
+    </ul>
+</div>
