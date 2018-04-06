@@ -21,10 +21,6 @@ export class BlogPostListComponent {
   public blogPosts: FirebaseListObservable<any[]>;
   blogPostDisplay;
   
-  submitRedirect() {
-    this.router.navigate(['/']);
-  }
-  
   ngOnInit() {
     this.blogPostService.getBlogPosts().subscribe(dataLastEmittedFromObserver => {
       this.blogPostDisplay = dataLastEmittedFromObserver;

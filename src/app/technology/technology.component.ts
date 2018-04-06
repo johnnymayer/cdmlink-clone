@@ -12,26 +12,26 @@ import { BlogPost } from '../models/BlogPost.model';
   providers: [HeaderComponent, BlogPostListComponent, BlogPostService]
 })
 
-export class TechnologyComponent implements OnInit {
+export class TechnologyComponent {
 
-  constructor(private header: HeaderComponent, private blogPostList: BlogPostListComponent, private blogPostService: BlogPostService) { }
+  // constructor(private header: HeaderComponent, private blogPostList: BlogPostListComponent, private blogPostService: BlogPostService) { }
 
-  blogPosts = this.blogPostList.blogPosts;
-  public filteredPosts = [];
-  blogPostDisplay;
-  public postArray;
+  // blogPosts = this.blogPostList.blogPosts;
+  // public filteredPosts = [];
+  // blogPostDisplay;
+  // public postArray;
 
-  ngOnInit() {
-    this.blogPostService.getBlogPosts().subscribe(dataLastEmittedFromObserver => {
-      this.blogPostDisplay = dataLastEmittedFromObserver;
-      for (let i=0; i < this.blogPostDisplay.length; i++) {
-        if (this.blogPostDisplay[i].category != "hardware" && this.blogPostDisplay[i].category != "performance") {
-          this.filteredPosts.push(this.blogPostDisplay[i]);
-        } else {
-          return null;
-          }
-      }
-    });
-  }
+  // ngOnInit() {
+  //   this.blogPostService.getBlogPosts().subscribe(dataLastEmittedFromObserver => {
+  //     this.blogPostDisplay = dataLastEmittedFromObserver;
+  //     for (let i=0; i < this.blogPostDisplay.length; i++) {
+  //       if (this.blogPostDisplay[i].category != "hardware" && this.blogPostDisplay[i].category != "performance") {
+  //         this.filteredPosts.push(this.blogPostDisplay[i]);
+  //       } else {
+  //         return null;
+  //         }
+  //     }
+  //   });
+  // }
 
 }
