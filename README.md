@@ -2,37 +2,34 @@
 
 This is an Angular site clone of [Create Digital Music](http://cdm.link).  A site I frequently browse that contains posts regarding music, music technology, music hardwares, etc.  This project is an exploration in Angular, and site building.
 
-## Technologies/Development
+## Technologies & Development Tools
 
 * [Angular CLI](https://github.com/angular/angular-cli)
 * VS Code
 * Angular
 * JavaScript & TypeScript
 * Chrome
+* Git version control
 
 ## Features
   * Blog Posts
-    * User can view blog posts.  I was unable to find a database containing blog postings.  I may add a news database in the future, specifically one that includes news stories regarding electronic music, electronic music hardware, etc.
-  * User created blog posts
-    * Started framing this out.  Struggling with the add option, perhaps a database set up specifically for blogs would be an excellent option.
-  * Header
-    * The header is virtually the only thing I feel confident with at this time.   It has temporary buttons for category tags.
+    * User can view blog posts regarding music, music technologies, and music hardwares.  These are accessible via categories, selected "top" stories on the home page.
+  * Ad Integration - *Feature Proposal*
+    * Deliver ads in order to monetize traffic to the site.  Specific ad categories could include, but are not limited to: music retailers, music hardware retailers, music services, etc.  Most ads would be user targeted with relevant services or retailers to the end user.
+  * Database
+    * All blog posts will be available in a database.  This will provide offsite storage for blog posts.  *Future features may include API integration of this database in order to serve blog material to other sites.*
   * Categories
     * Add categories, so that blog posts can be tagged with specific categories in order to implement a sort by category, or show all blog posts matching those categories.
-    
-   **NOTES
-    I am struggling with front end design.  It is a major challenge for me as I am not interested in it overall.  I do however like the layout aspect and design scheming.  I think that the way I have been learning and implementing coding is certainly in a back end style. I oftentimes get too easily lost in design elements as a perfectionist, which doesn't give me enough time to focus on back end dynamics and code.  I have been particularly struggling with back end standards and coding in Angular.  I feel like there is a lot to learn overall, and even with a lot of extra study time over the week, I feel behind in the overall basic implementation of Angular.  I also end up having to study and reread lots of design material in order to get things to look just right.  
 
 ## Installation/Viewing
 
-Download:
+Download via command line, or via [GitHub repository directly](https://github.com/johnnymayer/cdmlink-clone):
 ```
 $git clone https://github.com/johnnymayer/cdmlink-clone
 ```
 
-Prepare files:
+Prepare files via command line after navigating to root folder of downloaded directory:
 ```
-$cd cdmlink-clone
 $npm install
 ```
 
