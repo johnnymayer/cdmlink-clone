@@ -14,7 +14,9 @@ This is an Angular site clone of [Create Digital Music](http://cdm.link).  A sit
 
 ## Features & Specifications
   * Blog Posts
-    * User can view blog posts regarding music, music technologies, and music hardwares.  These are accessible via categories, selected "top" stories on the home page.
+    * User can view blog posts regarding music, music technologies, and music hardwares.  These are accessible via categories, selected "top" stories appear on the home page.
+  * Archive
+    * User can access an archive of all blog posts.  *Future Proposal includes - ammending Blog Post model to include date, adding date filtering for cleaner archiving.*
   * Ad Integration - *Feature Proposal*
     * Deliver ads in order to monetize traffic to the site.  Specific ad categories could include, but are not limited to: music retailers, music hardware retailers, music services, etc.  Most ads would be user targeted with relevant services or retailers to the end user.
   * Database
@@ -32,8 +34,6 @@ This is an Angular site clone of [Create Digital Music](http://cdm.link).  A sit
 ## Installation/Viewing
 
 [Click here to view the site live via Firebase](https://cdmlinkclone.firebaseapp.com)
-
-Alternatively, download and via the site locally (*User will not have access to database if viewed on local machine*):
 
 Download via command line, or via [GitHub repository directly](https://github.com/johnnymayer/cdmlink-clone):
 ```
@@ -54,6 +54,11 @@ Run ```$ng serve``` for a dev server. Navigate to `http://localhost:4200/`. The 
 
 ## Author
 [Johnny Mayer](https://github.com/johnnymayer)
+
+## Acknowledgements
+[Epicodus](http://www.learnhowtoprogram.com)
+[Monster Energy](https://www.monsterenergy.com/)
+[Dieselboy - System Upgrade(Full length DJ mix)](https://www.youtube.com/watch?v=4SIdbXP3JNA)
 
 ## License
 
