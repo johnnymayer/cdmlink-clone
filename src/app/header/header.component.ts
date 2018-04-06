@@ -20,19 +20,5 @@ export class HeaderComponent implements OnInit {
   }
 
   private blogPostDisplay = this.blogPostListComponent.blogPostDisplay;
-  public postArray;
-
-  // technologyFilter() {
-  //   this.postArray = [];
-
-  //   for (let i=0; i < this.blogPostDisplay.length; i++) {
-  //     if (this.blogPostDisplay[i].category === "technology") {
-  //       this.postArray.push(this.blogPostDisplay[i]);
-  //     } else {
-  //       return null;
-  //     }
-  //   }
-  // }
-
 
 }

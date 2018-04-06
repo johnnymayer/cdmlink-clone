@@ -19,7 +19,6 @@ export class TechnologyComponent implements OnInit {
   blogPosts = this.blogPostList.blogPosts;
   public filteredPosts = [];
   blogPostDisplay;
-  public empty: Boolean = true;
   public postArray;
 
   ngOnInit() {
@@ -29,9 +28,7 @@ export class TechnologyComponent implements OnInit {
         if (this.blogPostDisplay[i].category != "hardware" && this.blogPostDisplay[i].category != "performance") {
           this.filteredPosts.push(this.blogPostDisplay[i]);
         } else {
-          this.empty = false;
-          console.log("null");
-          console.log("FILTERED POSTS" + this.filteredPosts)
+          return null;
           }
       }
     });
