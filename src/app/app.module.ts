@@ -18,6 +18,7 @@ import { TechnologyComponent } from './technology/technology.component';
 import { PerformanceComponent } from './performance/performance.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { BlogPostService } from './blog-post.service';
+import { HardwareComponent } from './hardware/hardware.component';
 
 
 
@@ -38,7 +39,8 @@ export const firebaseConfig = {
     ArchiveComponent,
     TechnologyComponent,
     PerformanceComponent,
-    WelcomeComponent
+    WelcomeComponent,
+    HardwareComponent
   ],
   imports: [
     BrowserModule,

@@ -8,12 +8,14 @@ import { TechnologyComponent } from './technology/technology.component';
 import { PerformanceComponent } from './performance/performance.component';
 import { ArchiveComponent } from './archive/archive.component';
 import { WelcomeComponent } from './welcome/welcome.component';
+import { HardwareComponent } from './hardware/hardware.component';
 
 export const appRoutes: Routes = [
     { path: '', component: WelcomeComponent },
     { path: 'technology', component: TechnologyComponent },
     { path: 'performance', component: PerformanceComponent },
     { path: 'archive', component: BlogPostListComponent },
+    { path: 'hardware', component: HardwareComponent},
     { path: 'posts/:id', component: BlogPostComponent }
 
 ];
