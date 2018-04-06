@@ -1,8 +1,9 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { BlogPost } from './models/BlogPost.model';
-import { RouterModule, Routes } from '@angular/router';
+import { Routes, RouterModule } from '@angular/router';
+import { AppComponent } from './app.component';
 import { ModuleWithProviders } from '@angular/core';
+import { HeaderComponent } from './header/header.component';
+import { BlogPostListComponent } from './blog-post-list/blog-post-list.component';
+import { BlogPostComponent } from './blog-post/blog-post.component';
 
 export const appRoutes: Routes = [
 

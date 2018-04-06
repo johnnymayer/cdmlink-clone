@@ -1,9 +1,9 @@
-import { Component, Input, Output, EventEmitter, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { AppComponent } from '../app.component';
+import { FirebaseListObservable } from 'angularfire2/database';
 import { BlogPost } from '../models/BlogPost.model';
-import { BlogPostService } from '../blog-post.service';
-import { RouterModule, Routes, Route } from '@angular/router';
-import { Router } from '../app-routing.module';
-import { ActivatedRoute } from '@angular/router';
+import { Router } from '@angular/router';
+import {BlogPostService } from '../blog-post.service';
 
 @Component({
   selector: 'app-blog-post-list',
@@ -11,25 +11,24 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./blog-post-list.component.css'],
   providers: [BlogPostService]
 })
-export class BlogPostListComponent implements OnInit {
 
-  constructor(private route: ActivatedRoute, private router: Router, private blogPostService: BlogPostService) {}
 
+export class BlogPostListComponent {
+  
   ngOnInit() {
-    this.blogPost = this.blogPostService.getBlogPosts;
+    this.blogPostService.getBlogPosts().subscribe(dataLastEmittedFromObserver => {
+      this.blogPostDisplay = dataLastEmittedFromObserver;
+    })
+      this.blogPosts = this.blogPostService.getBlogPosts();
   }
-
-  goToDetails(clickedBlogPost: BlogPost) {
-    this.router.navigate(['blogPosts', clickedBlogPost]);
-  };
-
-  @Input() childBlogPostList: BlogPost[];
-  @Output() clickViewPost = new EventEmitter();
-
-  selectedBlogPost = null;
-
-  showBlogPost(clickedBlogPost) {
-    this.selectedBlogPost = clickedBlogPost;
-  };
+  
+  constructor(private router: Router, private blogPostService: BlogPostService) {}
+  
+  public blogPosts: FirebaseListObservable<any[]>;
+  blogPostDisplay;
+  
+  submitRedirect() {
+    this.router.navigate(['/']);
+  }
 
 }
