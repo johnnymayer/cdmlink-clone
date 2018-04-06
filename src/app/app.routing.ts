@@ -16,6 +16,6 @@ export const appRoutes: Routes = [
     { path: 'performance', component: PerformanceComponent },
     { path: 'archive', component: ArchiveComponent },
 
-]
+];
 
 export const routing: ModuleWithProviders = RouterModule.forRoot(appRoutes);
